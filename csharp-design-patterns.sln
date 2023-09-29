@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "strategy-pattern", "strategy-pattern", "{6691527F-6CFD-47E4-9CC4-7A52DEAD43BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "example1", "example1\example1.csproj", "{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2} = {6691527F-6CFD-47E4-9CC4-7A52DEAD43BE}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2228D5DC-083B-45EB-BDC0-2E6B3D6E98D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
