@@ -75,6 +75,7 @@ public class SocialMediaLinks
         if (!Uri.TryCreate(link, UriKind.Absolute, out Uri? uri))
             return false;
 
+        // If an expected domain is provided, check if the link belongs to that domain.
         if (expectedDomain != null && !uri.Host.EndsWith(expectedDomain, StringComparison.OrdinalIgnoreCase))
             return false;
 
