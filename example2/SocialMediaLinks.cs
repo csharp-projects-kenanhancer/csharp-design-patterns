@@ -69,7 +69,7 @@ public class SocialMediaLinks
 
     private bool IsValidSocialMediaLink(string link, string? expectedDomain = null)
     {
-        if (string.IsNullOrWhiteSpace(link))
+        if (String.IsNullOrWhiteSpace(link))
             return false;
 
         if (!Uri.TryCreate(link, UriKind.Absolute, out Uri? uri))

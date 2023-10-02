@@ -16,9 +16,9 @@ public class Actor
     {
         Id = Guid.NewGuid();
         // FirstName = firstName is not null and not "" ? firstName : throw new ArgumentNullException(nameof(firstName));
-        FirstName = !string.IsNullOrWhiteSpace(firstName) ? firstName : throw new ArgumentNullException(nameof(firstName));
-        LastName = !string.IsNullOrWhiteSpace(lastName) ? lastName : throw new ArgumentNullException(nameof(lastName));
-        Biography = !string.IsNullOrWhiteSpace(biography) ? biography : throw new ArgumentNullException(nameof(biography));
+        FirstName = !String.IsNullOrWhiteSpace(firstName) ? firstName : throw new ArgumentNullException(nameof(firstName));
+        LastName = !String.IsNullOrWhiteSpace(lastName) ? lastName : throw new ArgumentNullException(nameof(lastName));
+        Biography = !String.IsNullOrWhiteSpace(biography) ? biography : throw new ArgumentNullException(nameof(biography));
         SetSocialMediaLinks(socialMediaLinks);
     }
 
