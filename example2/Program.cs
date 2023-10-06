@@ -13,6 +13,13 @@ Console.WriteLine($"Original Facebook: {actor.SocialMediaLinks.Facebook}");
 Console.WriteLine($"Original OfficialWebsite: {actor.SocialMediaLinks.OfficialWebsite}");
 
 // Update social media links for the actor
+// V1
+// actor.UpdateTwitterLink("https://twitter.com/new-johndoe");
+// actor.UpdateInstagramLink("https://instagram.com/new-johndoe");
+// actor.UpdateFacebookLink("https://facebook.com/new-johndoe");
+// actor.UpdateOfficialWebsite("https://www.new-johndoe.com");
+
+// V2   
 actor.SocialMediaLinks.UpdateTwitterLink("https://twitter.com/new-johndoe");
 actor.SocialMediaLinks.UpdateInstagramLink("https://instagram.com/new-johndoe");
 actor.SocialMediaLinks.UpdateFacebookLink("https://facebook.com/new-johndoe");
@@ -25,6 +32,13 @@ Console.WriteLine($"Updated Facebook: {actor.SocialMediaLinks.Facebook}");
 Console.WriteLine($"Updated OfficialWebsite: {actor.SocialMediaLinks.OfficialWebsite}");
 
 // Remove a specific social media link
+// V1
+// actor.RemoveTwitterLink();
+// actor.RemoveInstagramLink();
+// actor.RemoveFacebookLink();
+// actor.RemoveOfficialWebsite();
+
+// V2
 actor.SocialMediaLinks.RemoveTwitterLink();
 actor.SocialMediaLinks.RemoveInstagramLink();
 actor.SocialMediaLinks.RemoveFacebookLink();

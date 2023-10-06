@@ -14,12 +14,18 @@ Console.WriteLine($"Original OfficialWebsite: {actor.SocialMediaLinks.OfficialWe
 
 // Update social media links for the actor
 // V1
+// actor.UpdateTwitterLink("https://twitter.com/new-johndoe");
+// actor.UpdateInstagramLink("https://instagram.com/new-johndoe");
+// actor.UpdateFacebookLink("https://facebook.com/new-johndoe");
+// actor.UpdateOfficialWebsite("https://www.new-johndoe.com");
+
+// V2
 // actor.SocialMediaLinks.UpdateTwitterLink("https://twitter.com/new-johndoe");
 // actor.SocialMediaLinks.UpdateInstagramLink("https://instagram.com/new-johndoe");
 // actor.SocialMediaLinks.UpdateFacebookLink("https://facebook.com/new-johndoe");
 // actor.SocialMediaLinks.UpdateOfficialWebsite("https://www.new-johndoe.com");
 
-// V2
+// V3
 actor.SocialMediaLinks.UpdateLink(SocialMediaType.Twitter, "https://twitter.com/new-johndoe");
 actor.SocialMediaLinks.UpdateLink(SocialMediaType.Instagram, "https://instagram.com/new-johndoe");
 actor.SocialMediaLinks.UpdateLink(SocialMediaType.Facebook, "https://facebook.com/new-johndoe");
@@ -33,12 +39,18 @@ Console.WriteLine($"Updated OfficialWebsite: {actor.SocialMediaLinks.OfficialWeb
 
 // Remove a specific social media link
 // V1
+// actor.RemoveTwitterLink();
+// actor.RemoveInstagramLink();
+// actor.RemoveFacebookLink();
+// actor.RemoveOfficialWebsite();
+
+// V2
 // actor.SocialMediaLinks.RemoveTwitterLink();
 // actor.SocialMediaLinks.RemoveInstagramLink();
 // actor.SocialMediaLinks.RemoveFacebookLink();
 // actor.SocialMediaLinks.RemoveOfficialWebsite();
 
-// V2
+// V3
 actor.SocialMediaLinks.RemoveLink(SocialMediaType.Twitter);
 actor.SocialMediaLinks.RemoveLink(SocialMediaType.Instagram);
 actor.SocialMediaLinks.RemoveLink(SocialMediaType.Facebook);
