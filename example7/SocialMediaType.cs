@@ -1,4 +1,4 @@
-namespace example4;
+namespace Example7;
 
 public enum SocialMediaType
 {
