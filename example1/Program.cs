@@ -9,7 +9,7 @@ Console.WriteLine($"Original Twitter: {actor.Twitter}");
 Console.WriteLine($"Original Instagram: {actor.Instagram}");
 Console.WriteLine($"Original Facebook: {actor.Facebook}");
 Console.WriteLine($"Original OfficialWebsite: {actor.OfficialWebsite}");
-    
+
 // Update social media links for the actor
 actor.UpdateTwitterLink("https://twitter.com/new-johndoe");
 actor.UpdateInstagramLink("https://instagram.com/new-johndoe");

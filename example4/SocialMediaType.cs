@@ -5,5 +5,5 @@ public enum SocialMediaType
     Twitter,
     Instagram,
     Facebook,
-    OfficialWebsite,
+    OfficialWebsite
 }

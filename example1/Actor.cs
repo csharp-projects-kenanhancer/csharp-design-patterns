@@ -3,19 +3,20 @@ namespace example1;
 public class Actor
 {
     public Guid Id { get; set; }
-    
+
     // Personal Details
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
     public string Biography { get; private set; }
-    
+
     // Social Media Links
     public string? Twitter { get; private set; }
     public string? Instagram { get; private set; }
     public string? Facebook { get; private set; }
     public string? OfficialWebsite { get; private set; }
 
-    public Actor(string firstName, string lastName, string biography, string? twitter, string? instagram, string? facebook, string? officialWebsite)
+    public Actor(string firstName, string lastName, string biography, string? twitter, string? instagram,
+        string? facebook, string? officialWebsite)
     {
         Id = Guid.NewGuid();
         FirstName = firstName;
@@ -90,7 +91,7 @@ public class Actor
         // If an expected domain is provided, check if the link belongs to that domain.
         if (expectedDomain != null && !uri.Host.EndsWith(expectedDomain, StringComparison.OrdinalIgnoreCase))
             return false;
-        
+
         return true;
     }
 }

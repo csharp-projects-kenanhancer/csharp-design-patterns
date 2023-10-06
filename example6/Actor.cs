@@ -1,4 +1,4 @@
-namespace Example5;
+namespace Example6;
 
 public class Actor
 {
@@ -15,6 +15,7 @@ public class Actor
     public Actor(string firstName, string lastName, string biography, SocialMediaLinks socialMediaLinks)
     {
         Id = Guid.NewGuid();
+        // FirstName = firstName is not null and not "" ? firstName : throw new ArgumentNullException(nameof(firstName));
         FirstName = !String.IsNullOrWhiteSpace(firstName)
             ? firstName
             : throw new ArgumentNullException(nameof(firstName));
@@ -23,5 +24,10 @@ public class Actor
             ? biography
             : throw new ArgumentNullException(nameof(biography));
         SocialMediaLinks = socialMediaLinks ?? throw new ArgumentNullException(nameof(socialMediaLinks));
+    }
+
+    public void SetSocialMediaLinks(SocialMediaLinks newSocialMediaLinks)
+    {
+        SocialMediaLinks = newSocialMediaLinks ?? throw new ArgumentNullException(nameof(newSocialMediaLinks));
     }
 }

@@ -25,11 +25,15 @@ Console.WriteLine($"Original OfficialWebsite: {actor.SocialMediaLinks.OfficialWe
 // actor.SocialMediaLinks.UpdateLink(SocialMediaType.Facebook, "https://facebook.com/new-johndoe");
 // actor.SocialMediaLinks.UpdateLink(SocialMediaType.OfficialWebsite, "https://www.new-johndoe.com");
 
-// V3
-actor.SetSocialMediaLinks(actor.SocialMediaLinks.UpdateLink(SocialMediaType.Twitter, "https://twitter.com/new-johndoe"));
-actor.SetSocialMediaLinks(actor.SocialMediaLinks.UpdateLink(SocialMediaType.Instagram, "https://instagram.com/new-johndoe"));
-actor.SetSocialMediaLinks(actor.SocialMediaLinks.UpdateLink(SocialMediaType.Facebook, "https://facebook.com/new-johndoe"));
-actor.SetSocialMediaLinks(actor.SocialMediaLinks.UpdateLink(SocialMediaType.OfficialWebsite, "https://www.new-johndoe.com"));
+// V3 - Immutable
+actor.SetSocialMediaLinks(
+    actor.SocialMediaLinks.UpdateLink(SocialMediaType.Twitter, "https://twitter.com/new-johndoe"));
+actor.SetSocialMediaLinks(
+    actor.SocialMediaLinks.UpdateLink(SocialMediaType.Instagram, "https://instagram.com/new-johndoe"));
+actor.SetSocialMediaLinks(
+    actor.SocialMediaLinks.UpdateLink(SocialMediaType.Facebook, "https://facebook.com/new-johndoe"));
+actor.SetSocialMediaLinks(
+    actor.SocialMediaLinks.UpdateLink(SocialMediaType.OfficialWebsite, "https://www.new-johndoe.com"));
 
 // Get a specific social media link
 Console.WriteLine($"Updated Twitter: {actor.SocialMediaLinks.Twitter}");

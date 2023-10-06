@@ -32,12 +32,16 @@ public class SocialMediaLinks
         switch (type)
         {
             case SocialMediaType.Twitter:
+                Twitter = newLink;
                 break;
             case SocialMediaType.Instagram:
+                Instagram = newLink;
                 break;
             case SocialMediaType.Facebook:
+                Facebook = newLink;
                 break;
             case SocialMediaType.OfficialWebsite:
+                OfficialWebsite = newLink;
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(type), type, $"Unsupported social media type: {type}");
@@ -69,7 +73,7 @@ public class SocialMediaLinks
     {
         if (String.IsNullOrWhiteSpace(link))
             return false;
-        
+
         if (!Uri.TryCreate(link, UriKind.Absolute, out Uri? uri))
             return false;
 

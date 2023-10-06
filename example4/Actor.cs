@@ -16,10 +16,14 @@ public class Actor
     {
         Id = Guid.NewGuid();
         // FirstName = firstName is not null and not "" ? firstName : throw new ArgumentNullException(nameof(firstName));
-        FirstName = !String.IsNullOrWhiteSpace(firstName) ? firstName : throw new ArgumentNullException(nameof(firstName));
+        FirstName = !String.IsNullOrWhiteSpace(firstName)
+            ? firstName
+            : throw new ArgumentNullException(nameof(firstName));
         LastName = !String.IsNullOrWhiteSpace(lastName) ? lastName : throw new ArgumentNullException(nameof(lastName));
-        Biography = !String.IsNullOrWhiteSpace(biography) ? biography : throw new ArgumentNullException(nameof(biography));
-        SetSocialMediaLinks(socialMediaLinks);
+        Biography = !String.IsNullOrWhiteSpace(biography)
+            ? biography
+            : throw new ArgumentNullException(nameof(biography));
+        SocialMediaLinks = socialMediaLinks ?? throw new ArgumentNullException(nameof(socialMediaLinks));
     }
 
     public void SetSocialMediaLinks(SocialMediaLinks newSocialMediaLinks)
